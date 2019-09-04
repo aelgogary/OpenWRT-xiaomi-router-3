@@ -33,10 +33,10 @@ jobs:
     - run:
         name: (OpenWrt) Build Target
         command: $DEFAULT_SUDOSU $DEFAULT_USER -c "cd ~$CIRCLE_PROJECT_REPONAME && make world -j16"
-        no_output_timeout: 30m   
+        no_output_timeout: 30m         
     
     - store_artifacts:
-        path: ./OpenWRT-xiaomi-router-3/build_dir/
+        path: ./~OpenWRT-xiaomi-router-3/build_dir
  
 workflows:
   version: 2
