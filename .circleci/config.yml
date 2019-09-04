@@ -36,7 +36,7 @@ jobs:
         no_output_timeout: 30m
     
     - store_artifacts:
-	path: ~$CIRCLE_PROJECT_REPONAME/build_dir
+        path: ~$CIRCLE_PROJECT_REPONAME/build_dir
     
     - store_artifacts:
         path: ./build_dir
