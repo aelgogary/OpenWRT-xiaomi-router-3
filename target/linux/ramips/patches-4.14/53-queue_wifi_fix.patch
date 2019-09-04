@@ -1,0 +1,11 @@
+--- a/drivers/net/wireless/ralink/rt2x00/rt2x00queue.c
++++ b/drivers/net/wireless/ralink/rt2x00/rt2x00queue.c
+@@ -673,7 +673,7 @@ int rt2x00queue_write_tx_frame(struct da
+ 	spin_lock(&queue->tx_lock);
+ 
+ 	if (unlikely(rt2x00queue_full(queue))) {
+-		rt2x00_err(queue->rt2x00dev, "Dropping frame due to full tx queue %d\n",
++		rt2x00_dbg(queue->rt2x00dev, "Dropping frame due to full tx queue %d\n",
+ 			   queue->qid);
+ 		ret = -ENOBUFS;
+ 		goto out;
