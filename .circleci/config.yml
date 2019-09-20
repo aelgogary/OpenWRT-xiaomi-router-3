@@ -36,7 +36,7 @@ jobs:
         no_output_timeout: 30m         
     
     - store_artifacts:
-        path: ./~OpenWRT-xiaomi-router-3/build_dir
+        path: ./~OpenWRT-xiaomi-router-3/bin
  
 workflows:
   version: 2
